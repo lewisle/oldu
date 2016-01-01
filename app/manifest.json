@@ -13,7 +13,8 @@
   "background": {
     "scripts": [
       "scripts/chromereload.js",
-      "scripts/background.js"
+      "scripts/background.js",
+      "scripts/contextmenus.js"
     ]
   },
   "permissions": [
@@ -22,7 +23,7 @@
     "https://*/*",
     "clipboardRead",
     "clipboardWrite",
-    "contentSettings"
+    "contextMenus"
   ],
   "options_ui": {
     "page": "options.html",
