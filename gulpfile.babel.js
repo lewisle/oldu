@@ -6,13 +6,13 @@ import runSequence from 'run-sequence'
 const $ = require('gulp-load-plugins')()
 
 gulp.task('default', ['build'], () => {
-  gulp.watch(['./app/**/*'], ['default'])
+  //gulp.watch(['./app/**/*'], ['default'])
 })
 
 gulp.task('copy', () => {
   const src = [
     './app/**/*',                     // copy all folders and files
-    '!./app/bower_components{,/**}',  // exclude bower_components folder,
+    '!./app/bower_components{,/**}',      // exclude bower_components folder,
     '!./app/scripts{,/**}'            // exclude scripts folder
   ]
   const dest = 'dist'
